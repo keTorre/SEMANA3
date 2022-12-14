@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kevinTs3.Login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Bienvenido al sistema" FontSize="20" HorizontalTextAlignment="Center"></Label>
+            <Image Source="https://univercimas.com/wp-content/uploads/2021/05/Logo-de-la-Universidad-Tecnologica-Israel-UTI.png"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="CONTRASEÑA" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtContraseña" Placeholder="CONTRASEÑA" IsPassword="True" Grid.Row="1" Grid.Column="1"></Entry>
+                   
+                </Grid>
+            <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
