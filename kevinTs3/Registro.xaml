@@ -4,9 +4,23 @@
              x:Class="kevinTs3.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Ventana Registro" FontSize="20" HorizontalTextAlignment="Center" />
+            <Label Text="Ventana Registro" FontSize="20" TextColor="Red" HorizontalTextAlignment="Center" />
+            
             <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="16"></Label>
             
+            <Label Text="!CALCULO NOTAS PARCIAL 1!" FontSize="18" TextColor="Orange" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtDatoUno" Placeholder="Ingrese nota seguimiento 1" Keyboard="Numeric" TextChanged="txtDatoUno_TextChanged"/>
+            <Entry x:Name="txtDatoDos" Placeholder="Ingrese nota examen1" Keyboard="Numeric" TextChanged="txtDatoDos_TextChanged"></Entry>
+            <Entry x:Name="txtResultado" Placeholder="Resultado Parcial 1" Keyboard="Numeric" IsEnabled="False"></Entry>
+            <Label Text="!CALCULO NOTAS PARCIAL 2!" FontSize="18" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtDatoTres" Placeholder="Ingrese nota seguimiento 2" Keyboard="Numeric" TextChanged="txtDatoTres_TextChanged"/>
+            <Entry x:Name="txtDatoCuatro" Placeholder="Ingrese nota examen2" Keyboard="Numeric" TextChanged="txtDatoCuatro_TextChanged" ></Entry>
+            <Entry x:Name="txtResultado2" Placeholder="Resultado Parcial 2" Keyboard="Numeric" IsEnabled="False"></Entry>
+            <Entry x:Name="txtNotaFinal" Placeholder="Resultado NotaFinal" Keyboard="Numeric" IsEnabled="False"></Entry>
+            <Button x:Name="btnCalcular" Text="Nota Final" Clicked="btnCalcular_Clicked" ></Button>
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

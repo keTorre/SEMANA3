@@ -21,7 +21,7 @@ namespace kevinTs3
         {
             string usuario = "kevinT";
             string contraseña = "1234";
-            if(usuario== txtUsuario.Text && contraseña== txtContraseña.Text)
+            if (usuario == txtUsuario.Text && contraseña == txtContraseña.Text)
             {
                 Navigation.PushAsync(new Registro(usuario));
             }
@@ -30,5 +30,6 @@ namespace kevinTs3
                 DisplayAlert("ALERTA", "Usuario/Contraseña Incorrectos", "Cerrar");
             }
         }
+
     }
 }
