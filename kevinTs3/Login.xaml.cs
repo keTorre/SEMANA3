@@ -19,8 +19,8 @@ namespace kevinTs3
 
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
-            string usuario = "kevinT";
-            string contraseña = "1234";
+            string usuario = "estudiante2022";
+            string contraseña = "uisrael2022";
             if (usuario == txtUsuario.Text && contraseña == txtContraseña.Text)
             {
                 Navigation.PushAsync(new Registro(usuario));
